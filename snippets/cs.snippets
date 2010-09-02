@@ -1,0 +1,111 @@
+snippet pu
+	public
+snippet po
+	protected
+snippet pr
+	private
+snippet st
+	static
+snippet ab
+	abstract
+snippet re
+	return
+snippet br
+	break;
+snippet de
+	default:
+		${1}
+snippet ca
+	catch(${1:Exception} ${2:e}) 
+		${3}
+snippet ca{
+	catch(${1:Exception} ${2:e}) 
+	{
+		${3}
+	}
+snippet th
+	throw ${1:new}
+snippet if
+	if (${1}) 
+		${2}
+snippet if{
+	if (${1}) 
+	{
+		${2}
+	}
+snippet el
+	else 
+snippet el{
+	else
+	{
+		${1}
+	}
+snippet elif
+	else if (${1}) 
+		${2}
+snippet elif{
+	else if (${1}) 
+	{
+		${2}
+	}
+snippet wh
+	while (${1}) 
+		${2}
+snippet wh{
+	while (${1}) 
+	{
+		${2}
+	}
+snippet for
+	for (${1}; ${2}; ${3}) 
+		${4}
+snippet for{
+	for (${1}; ${2}; ${3}) 
+	{
+		${4}
+	}
+snippet fore
+	foreach(var ${2:item} in ${1:collection})
+		${3}
+snippet fore{
+	foreach(var ${2:item} in ${1:collection})
+	{
+		${3}
+	}
+snippet sw
+	switch (${1}) 
+	{
+		${2}
+	}
+snippet cs
+	case ${1}:
+		${2}
+		break;
+	${3}
+snippet obs
+	[Observation]
+	public void ${1:test_name}()
+	{
+		${2}
+	}
+snippet spec
+	[TestFixture]
+	public class ${1:SomeClass} : ContextSpecification
+	{
+		${2}
+	}
+snippet cla
+	public class ${1:SomeClass}
+	{
+		${2}
+	}
+snippet join
+	Join(${1:separator}, ${2:collection})
+snippet sel
+	Select(${1:x} => ${2:impl})
+snippet where
+	Where(${1:x} => ${2:impl})
+snippet any
+	Any(${1:x} => ${2:impl})
+snippet writeline
+	System.Console.WriteLine("${1:string}");
