@@ -2,15 +2,32 @@ colorscheme desert
 
 filetype on
 filetype plugin on
+filetype indent on
+
 syntax on
 
 set tabstop=4
 set shiftwidth=4
-set number
+set history=1000
+set scrolloff=3
+set shortmess=atI
 
+set title
+" set number
+set ruler
+set hidden
+set ignorecase
+set smartcase
 set autoindent
 set smartindent
-filetype plugin indent on
+set incsearch
+set hlsearch
+set visualbell
+
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+let mapleader = ","
 
 " Folding : http://vim.wikia.com/wiki/Syntax-based_folding, see comment by Ostrygen 
 au FileType cs set omnifunc=syntaxcomplete#Complete
@@ -19,7 +36,11 @@ au FileType cs set foldmarker={,}
 au FileType cs set foldtext=substitute(getline(v:foldstart),'{.*','{...}',)
 au FileType cs set foldlevelstart=2  
 au FileType cs set errorformat=\ %#%f(%l\\\,%c):\ error\ CS%n:\ %m
-au FileType cs set makeprg=xbuild\ /nologo\ /v:q
 
 map <f2> :NERDTreeToggle<cr>
 imap <f2> <esc>:NERDTreeToggle<cr>i
+
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+
+nmap <silent> <leader>n :silent :nohlsearch<CR>
