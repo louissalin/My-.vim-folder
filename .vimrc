@@ -34,13 +34,6 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 let mapleader = ","
 
-" Folding : http://vim.wikia.com/wiki/Syntax-based_folding, see comment by Ostrygen 
-au FileType cs set omnifunc=syntaxcomplete#Complete
-au FileType cs set foldmethod=marker
-au FileType cs set foldmarker={,}
-au FileType cs set foldtext=substitute(getline(v:foldstart),'{.*','{...}',)
-au FileType cs set errorformat=\ %#%f(%l\\\,%c):\ error\ CS%n:\ %m
-
 map <leader>f :NERDTreeToggle<cr>
 map <leader>ff :FufFile<cr>
 map <leader>fb :FufBuffer<cr>
