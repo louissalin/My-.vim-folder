@@ -10,8 +10,9 @@ filetype plugin indent on
 
 syntax on
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set history=1000
 set scrolloff=3
 set shortmess=atI
@@ -21,11 +22,13 @@ set ruler
 set hidden
 set ignorecase
 set smartcase
+set smarttab
 set autoindent
 set smartindent
 set incsearch
 set hlsearch
 set visualbell
+set expandtab
 
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
@@ -43,6 +46,7 @@ map <leader>f :NERDTreeToggle<cr>
 map <leader>ff :FufFile<cr>
 map <leader>fb :FufBuffer<cr>
 map <leader>fd :FufDir<cr>
+map <leader>fc :FufCoverageFile<cr>
 
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
