@@ -39,6 +39,7 @@ map <leader>ff :FufFile<cr>
 map <leader>fb :FufBuffer<cr>
 map <leader>fd :FufDir<cr>
 map <leader>fc :FufCoverageFile<cr>
+map <leader>fe :FufFileWithCurrentBufferDir<cr>
 
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
