@@ -1,7 +1,9 @@
 filetype off
 execute pathogen#infect()
 
-colorscheme anotherdark
+syntax enable
+set background=light
+colorscheme solarized
 
 filetype on
 filetype plugin on
